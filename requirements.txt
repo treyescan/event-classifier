@@ -1,0 +1,10 @@
+datalad==0.19.3
+loguru==0.7.2
+matplotlib==3.8.2
+numpy==1.26.2
+pandas==2.1.4
+PyQt5==5.15.10
+pytest==7.4.3
+remodnav==1.1.2
+scipy==1.11.4
+statsmodels==0.14.0

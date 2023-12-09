@@ -1,0 +1,5 @@
+*.mp4
+*.tsv
+*.png
+treyescan.log
+__constants.py
