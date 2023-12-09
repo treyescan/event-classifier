@@ -84,7 +84,7 @@ python3 single-remodnav.py CC066 T1 task1 batch_id
 
 ## Adjusting REMoDNaV parameters
 
-As can been seen in the [documentation](https://github.com/psychoinformatics-de/remodnav#example-usage), REMoDNaV accepts input parameters. To adjust these parameters, refer to: [multiremodnav/call_remodnav.py](/multiremodnav/call_remodnav.py), line 45.
+As can been seen in the [documentation](https://github.com/psychoinformatics-de/remodnav#example-usage), REMoDNaV accepts input parameters. To adjust these parameters, refer to: [multiremodnav/call_remodnav.py](https://github.com/treyescan/events-classifier/blob/e89d1db30df4a290664ab0cc38a4bf1b5cee8b7b/multiremodnav/call_remodnav.py#L45), line 45.
 
 ## Citation
 
