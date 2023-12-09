@@ -4,8 +4,6 @@ This repo contains the code for classifying gaze data from [treyescan/dynamic-ao
 
 ## Table of Contents
 
-## Table of Contents
-
 1. [Installation](https://github.com/treyescan/events-classifier?tab=readme-ov-file#installation)
 1. [Example Usage](https://github.com/treyescan/events-classifier?tab=readme-ov-file#example-usage)
     1. [Multi REMoDNaV](https://github.com/treyescan/events-classifier?tab=readme-ov-file#1-multi-remodnav)
@@ -85,6 +83,8 @@ python3 single-remodnav.py CC066 T1 task1 batch_id
 ```
 
 ## Adjusting REMoDNaV parameters
+
+As can been seen in the [documentation](https://github.com/psychoinformatics-de/remodnav#example-usage), REMoDNaV accepts input parameters. To adjust these parameters, refer to: [multiremodnav/call_remodnav.py](/multiremodnav/call_remodnav.py), line 45.
 
 ## Citation
 

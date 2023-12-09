@@ -37,9 +37,6 @@ def call_remodnav(participant_id, measurement_moment, task, batch_id = ''):
     tsv_file = f"{input_folder_participant}/gp.tsv"
     events_file = f"{output_folder_participant}/events_{date_string}.tsv"
 
-    # Note to Yasmin: this code is called by multi remodnav and single remodnav
-    # all params: https://github.com/psychoinformatics-de/remodnav#example-usage
-
     subprocess.call(['python3',
                         './remodnav-adaptation/__init__.py',
                         tsv_file,
