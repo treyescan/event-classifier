@@ -1,8 +1,21 @@
-# TREYESCAN – Events Classifier
+# TREYESCAN – Events Classifier v1.0.0
 
 This repo contains the code for classifying gaze data from [treyescan/dynamic-aoi-toolkit](https://github.com/treyescan/dynamic-aoi-toolkit). For the classification, a slightly modified version of [psychoinformatics-de/remodnav](https://github.com/psychoinformatics-de/remodnav) is used. Refer to the publication for an explanation of this adaptation. The adapted code can be found in `/remodnav-adapation`.
 
 ## Table of Contents
+
+## Table of Contents
+
+1. [Installation](https://github.com/treyescan/events-classifier?tab=readme-ov-file#installation)
+1. [Example Usage](https://github.com/treyescan/events-classifier?tab=readme-ov-file#example-usage)
+    1. [Multi REMoDNaV](https://github.com/treyescan/events-classifier?tab=readme-ov-file#1-multi-remodnav)
+    1. [Merge REMoDNaV](https://github.com/treyescan/events-classifier?tab=readme-ov-file#2-merge-remodnav)
+    1. [Overlay REMoDNaV](https://github.com/treyescan/events-classifier?tab=readme-ov-file#3-overlay-remodnav)
+    1. [Single REMoDNaV](https://github.com/treyescan/events-classifier?tab=readme-ov-file#4-single-remodnav)
+1. [Adjusting REMoDNaV parameters](https://github.com/treyescan/events-classifier?tab=readme-ov-file#adjusting-remodnav-parameters)
+1. [Citation](https://github.com/treyescan/events-classifier?tab=readme-ov-file#citation)
+1. [Contribution](https://github.com/treyescan/events-classifier?tab=readme-ov-file#contribution)
+1. [License](https://github.com/treyescan/events-classifier?tab=readme-ov-file#license)
 
 ## Installation
 
@@ -75,6 +88,16 @@ python3 single-remodnav.py CC066 T1 task1 batch_id
 
 ## Citation
 
+```
+(TODO:) https://doi.org/10.5281/zenodo.8029272
+```
+
+- DOI v1.0.0: (TODO:)
+
 ## Contribution
 
+[Issues](https://github.com/treyescan/events-classifier/issues/new) and other contributions are welcome.
+
 ## License
+
+This toolkit is licensed under [GNU GENERAL PUBLIC LICENSE V3](/LICENSE)
