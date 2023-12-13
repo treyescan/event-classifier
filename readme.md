@@ -1,23 +1,23 @@
-# TREYESCAN – Events Classifier v1.0.0
+# TREYESCAN – Event Classifier v1.0.0
 
-This repo contains the code for classifying gaze data from [treyescan/dynamic-aoi-toolkit](https://github.com/treyescan/dynamic-aoi-toolkit). For the classification, a slightly modified version of [psychoinformatics-de/remodnav](https://github.com/psychoinformatics-de/remodnav) is used. Refer to the publication for an explanation of this adaptation. The adapted code can be found in `/remodnav-adapation`.
+This repo contains the code for event detection from [treyescan/dynamic-aoi-toolkit](https://github.com/treyescan/dynamic-aoi-toolkit). For the classification, a slightly modified version of [psychoinformatics-de/remodnav](https://github.com/psychoinformatics-de/remodnav) is used. Refer to the publication for an explanation of this adaptation. The adapted code can be found in `/remodnav-adapation`.
 
 ## Table of Contents
 
-1. [Installation](https://github.com/treyescan/events-classifier?tab=readme-ov-file#installation)
-1. [Example Usage](https://github.com/treyescan/events-classifier?tab=readme-ov-file#example-usage)
-    1. [Multi REMoDNaV](https://github.com/treyescan/events-classifier?tab=readme-ov-file#1-multi-remodnav)
-    1. [Merge REMoDNaV](https://github.com/treyescan/events-classifier?tab=readme-ov-file#2-merge-remodnav)
-    1. [Overlay REMoDNaV](https://github.com/treyescan/events-classifier?tab=readme-ov-file#3-overlay-remodnav)
-    1. [Single REMoDNaV](https://github.com/treyescan/events-classifier?tab=readme-ov-file#4-single-remodnav)
-1. [Adjusting REMoDNaV parameters](https://github.com/treyescan/events-classifier?tab=readme-ov-file#adjusting-remodnav-parameters)
-1. [Citation](https://github.com/treyescan/events-classifier?tab=readme-ov-file#citation)
-1. [Contribution](https://github.com/treyescan/events-classifier?tab=readme-ov-file#contribution)
-1. [License](https://github.com/treyescan/events-classifier?tab=readme-ov-file#license)
+1. [Installation](https://github.com/treyescan/event-classifier?tab=readme-ov-file#installation)
+1. [Example Usage](https://github.com/treyescan/event-classifier?tab=readme-ov-file#example-usage)
+    1. [Multi REMoDNaV](https://github.com/treyescan/event-classifier?tab=readme-ov-file#1-multi-remodnav)
+    1. [Merge REMoDNaV](https://github.com/treyescan/event-classifier?tab=readme-ov-file#2-merge-remodnav)
+    1. [Overlay REMoDNaV](https://github.com/treyescan/event-classifier?tab=readme-ov-file#3-overlay-remodnav)
+    1. [Single REMoDNaV](https://github.com/treyescan/event-classifier?tab=readme-ov-file#4-single-remodnav)
+1. [Adjusting REMoDNaV parameters](https://github.com/treyescan/event-classifier?tab=readme-ov-file#adjusting-remodnav-parameters)
+1. [Citation](https://github.com/treyescan/event-classifier?tab=readme-ov-file#citation)
+1. [Contribution](https://github.com/treyescan/event-classifier?tab=readme-ov-file#contribution)
+1. [License](https://github.com/treyescan/event-classifier?tab=readme-ov-file#license)
 
 ## Installation
 
-To use the gaze classifier, make sure python3 is installed. To install the latest version of this repo, use:
+To use the event classifier, make sure python3 is installed. To install the latest version of this repo, use:
 
 ```shell
 git clone git@github.com:treyescan/gaze-classifier.git
@@ -84,7 +84,7 @@ python3 single-remodnav.py CC066 T1 task1 batch_id
 
 ## Adjusting REMoDNaV parameters
 
-As can been seen in the [documentation](https://github.com/psychoinformatics-de/remodnav#example-usage), REMoDNaV accepts input parameters. To adjust these parameters, refer to: [multiremodnav/call_remodnav.py](https://github.com/treyescan/events-classifier/blob/e89d1db30df4a290664ab0cc38a4bf1b5cee8b7b/multiremodnav/call_remodnav.py#L45), line 45.
+As can been seen in the [documentation](https://github.com/psychoinformatics-de/remodnav#example-usage), REMoDNaV accepts input parameters. To adjust these parameters, refer to: [multiremodnav/call_remodnav.py](https://github.com/treyescan/event-classifier/blob/e89d1db30df4a290664ab0cc38a4bf1b5cee8b7b/multiremodnav/call_remodnav.py#L45), line 45.
 
 ## Citation
 
@@ -96,7 +96,7 @@ As can been seen in the [documentation](https://github.com/psychoinformatics-de/
 
 ## Contribution
 
-[Issues](https://github.com/treyescan/events-classifier/issues/new) and other contributions are welcome.
+[Issues](https://github.com/treyescan/event-classifier/issues/new) and other contributions are welcome.
 
 ## License
 
