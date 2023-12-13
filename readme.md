@@ -1,5 +1,7 @@
 # TREYESCAN – Event Classifier v1.0.0
 
+<img src="assets/example.gif" />
+
 This repo contains the code for event detection from [treyescan/dynamic-aoi-toolkit](https://github.com/treyescan/dynamic-aoi-toolkit). For the classification, a slightly modified version of [psychoinformatics-de/remodnav](https://github.com/psychoinformatics-de/remodnav) is used. Refer to the publication for an explanation of this adaptation. The adapted code can be found in `/remodnav-adapation`.
 
 ## Table of Contents
@@ -67,7 +69,7 @@ python3 merge-remodnav.py --id={batch_id}
 
 To better understand the classified events of single trials, `overlay-remodnav.py` may be used to generate a video such as below:
 
-{TODO: insert video}
+<img src="assets/example.gif" />
 
 ```shell
 python3 overlay-remodnav.py
