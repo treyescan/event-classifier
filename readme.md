@@ -72,7 +72,7 @@ To better understand the classified events of single trials, `overlay-remodnav.p
 <img src="assets/example.gif" />
 
 ```shell
-python3 overlay-remodnav.py
+python3 overlay-remodnav.py {gp.csv} {graph.png} {video.mp4} {startframe_nr}
 # this will output a video remodnav-overlay-{participant_id}.mp4
 ```
 
