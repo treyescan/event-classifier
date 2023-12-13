@@ -160,7 +160,7 @@ def overlay_video(gp: pd.DataFrame, events: pd.DataFrame, video_path: str, video
         # increase frame number
         current_frame = current_frame + 1
 
-    # video opslaan
+    # save video
     cv2.destroyAllWindows()
     cap.release()
     out.release()

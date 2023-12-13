@@ -1,4 +1,4 @@
-import time, re, subprocess
+import re
 from PyQt5.QtCore import QRunnable, pyqtSignal, QObject
 from multiremodnav.call_remodnav import call_remodnav
 

@@ -6,9 +6,8 @@ import sys
 sys.path.append('../../')
 
 import argparse
-import __constants, glob, os, platform, subprocess
+import __constants, glob
 import pandas as pd
-import re
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--id', help='Batch ID to include in output file names')
