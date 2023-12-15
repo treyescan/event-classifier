@@ -1,4 +1,4 @@
-# TREYESCAN – Event Classifier v1.0.0
+# TREYESCAN – Event Classifier v1.0
 
 <img src="assets/example.gif" />
 
@@ -21,14 +21,14 @@ This repo contains the code for event detection from [treyescan/dynamic-aoi-tool
 
 To use the event classifier, make sure python3 is installed. To install the latest version of this repo, use:
 
-```shell
-git clone git@github.com:treyescan/gaze-classifier.git
+```bash
+$ git clone git@github.com:treyescan/gaze-classifier.git
 
-cd gaze-classifier
+$ cd gaze-classifier
 
-pip3 install -m requirements.txt
+$ pip3 install -m requirements.txt
 
-cp __constants.example.py __constants.py 
+$ cp __constants.example.py __constants.py 
 # copy example config file; make sure to edit the variables for your system
 ```
 
@@ -36,19 +36,21 @@ cp __constants.example.py __constants.py
 
 ### 1. Multi REMoDNaV
 
+<img src="./assets/screenshot.png" width="400" />
+
 When classifying gaze, you will mainly use the `multi-remodnav.py`, as this is the most efficient (multi threaded) way to quickly analyse multiple participants or trials.
 
 The script will search in `input_folder` (set in `__constants.py`) for `gp.csv`. These files are the result of [treyescan/dynamic-aoi-toolkit](https://github.com/treyescan/dynamic-aoi-toolkit) and contain processed gaze data from the Pupil Labs Eye Trackers.
 
-> NB: The gaze classifier assumes the same data folder structure as [treyescan/dynamic-aoi-toolkit](https://github.com/treyescan/dynamic-aoi-toolkit)
+> NB: The gaze classifier assumes the same data folder structure as [treyescan/dynamic-aoi-toolkit](https://github.com/treyescan/dynamic-aoi-toolkit). The only difference being that participant ID's are formatted as: CC000. In the code you'll find comments which can be enabled to account for the previous ID format (P-000)
 
 For all found `gp.csv` files:
 1. A preperation script will be called (which prepares the data as REMoDNaV requires)
 1. The REMoDNaV adaptation will be called and outputs `events.tsv` along with a visual representation of the events in an image
 1. A report script will be called (which aggregates data and saves visual representation which help loading data into statistical software, e.g. SPSS)
 
-```shell
-python3 multi-remodnav.py
+```bash
+$ python3 multi-remodnav.py
 ```
 
 1. Ensure correct input/output folder locations in `__constants.py`
@@ -61,8 +63,10 @@ python3 multi-remodnav.py
 
 `multi-remodnav.py` runs and outputs gaze events for each trial separately. To simplify analysis in statistical software, `merge-remodnav.py` may be called. Based on a Batch ID, this will aggregrate all trials into a single spreadsheet. Make sure to use the Batch ID you provided when running `multi-remodnav.py`.
 
-```shell
-python3 merge-remodnav.py --id={batch_id}
+```bash
+$ python3 merge-remodnav.py --id={batch_id}
+Done! 7 files combined to merged_remodnav_{batch_id}.csv
+Done! 7 participants combined to merged_remodnav_wide_{batch_id}.csv
 ```
 
 ### 3. Overlay REMoDNaV
@@ -71,17 +75,19 @@ To better understand the classified events of single trials, `overlay-remodnav.p
 
 <img src="assets/example.gif" />
 
-```shell
-python3 overlay-remodnav.py {gp.csv} {graph.png} {video.mp4} {startframe_nr}
+```bash
+python3 overlay-remodnav.py {gp.csv} {events.tsv} {graph.png} {video.mp4} {startframe_nr}
 # this will output a video remodnav-overlay-{participant_id}.mp4
 ```
+
+> Tip: use {startframe_nr} and press Q to only export a part of a video
 
 ### 4. Single REMoDNaV
 
 In some cases, a single trial must be processed again for a specific batch. Rather than running `multi-remodnav.py` for all trials, `single-remodnav.py` may be used to rerun the classifier for a single trial.
 
-```shell
-python3 single-remodnav.py CC066 T1 task1 batch_id
+```bash
+$ python3 single-remodnav.py CC066 T1 task1 batch_id
 ```
 
 ## Adjusting REMoDNaV parameters

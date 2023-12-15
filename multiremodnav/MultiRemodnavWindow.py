@@ -69,11 +69,13 @@ class MultiRemodnavWindow(QWidget):
 
     def fetchFilesToAnalyse(self):
         participants_to_analyse = glob.glob(f'{input_folder}/*/*/*/gp.csv')
+        print(f'{input_folder}/*/*/*/gp.csv')
         
         self.total = len(participants_to_analyse)
         self.progressLabel.setText(f"(0/{self.total}) 0%")
 
         for i, file in enumerate(participants_to_analyse):
+            # regex = re.findall("(P-[0-9]..)\/(T[0-9])\/([a-zA-Z0-9]*)", file)
             regex = re.findall("(CC[0-9]..)\/(T[0-9])\/([a-zA-Z0-9]*)", file)
 
             participant_id = regex[0][0]

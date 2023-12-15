@@ -15,6 +15,7 @@ class MultiRemodnavWorker(QRunnable):
         self.data = data
 
         # regex data and save to class
+        # regex = re.findall("([0-9]*), (P-[0-9]..), (T[0-9]), ([a-zA-Z0-9]*)", data)
         regex = re.findall("([0-9]*), (CC[0-9]..), (T[0-9]), ([a-zA-Z0-9]*)", data)
 
         self.row_id = regex[0][0]

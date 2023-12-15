@@ -12,6 +12,7 @@ if __name__ == '__main__':
     start_frame = int(sys.argv[5])
 
     # Get participant ID for video output name
+    # regex = re.findall("(P-[0-9]..)\/(T[0-9])\/([a-zA-Z0-9]*)", sys.argv[1])
     regex = re.findall("(CC[0-9]..)\/(T[0-9])\/([a-zA-Z0-9]*)", sys.argv[1])
 
     participant_id = regex[0][0]

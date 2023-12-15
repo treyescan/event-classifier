@@ -4,3 +4,4 @@
 treyescan.log
 __constants.py
 .DS_Store
+__pycache__/
