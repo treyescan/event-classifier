@@ -5,3 +5,4 @@ treyescan.log
 __constants.py
 .DS_Store
 __pycache__/
+!assets/*.png
