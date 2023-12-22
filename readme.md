@@ -94,6 +94,15 @@ $ python3 single-remodnav.py CC066 T1 task1 batch_id
 
 As can been seen in the [documentation](https://github.com/psychoinformatics-de/remodnav#example-usage), REMoDNaV accepts input parameters. To adjust these parameters, refer to: [multiremodnav/call_remodnav.py](https://github.com/treyescan/event-classifier/blob/e89d1db30df4a290664ab0cc38a4bf1b5cee8b7b/multiremodnav/call_remodnav.py#L45), line 45.
 
+| REMoDNaV Parameter | TREYESCAN default value |
+| --- | --- |
+| `--min-blink-duration` | 0.075 | 
+| `--dilate-nan` | 0 | 
+| `--savgol-length` | 21/240 | 
+| `--pursuit-velthresh` | 50.0 | 
+| `--noise-factor` | 3.0 | 
+| `--min-pursuit-duration` | 100 | 
+
 ## Citation
 
 ```
