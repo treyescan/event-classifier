@@ -1,17 +1,15 @@
 # TREYESCAN – Event Classifier v1.0
 
-<img src="assets/example.gif" />
-
 This repo contains the code for event detection from [treyescan/dynamic-aoi-toolkit](https://github.com/treyescan/dynamic-aoi-toolkit). For the classification, a slightly modified version of [psychoinformatics-de/remodnav](https://github.com/psychoinformatics-de/remodnav) is used. Refer to the publication for an explanation of this adaptation. The adapted code can be found in `/remodnav-adapation`.
 
 ## Table of Contents
 
 1. [Installation](https://github.com/treyescan/event-classifier?tab=readme-ov-file#installation)
 1. [Example Usage](https://github.com/treyescan/event-classifier?tab=readme-ov-file#example-usage)
-    1. [Multi REMoDNaV](https://github.com/treyescan/event-classifier?tab=readme-ov-file#1-multi-remodnav)
-    1. [Merge REMoDNaV](https://github.com/treyescan/event-classifier?tab=readme-ov-file#2-merge-remodnav)
-    1. [Overlay REMoDNaV](https://github.com/treyescan/event-classifier?tab=readme-ov-file#3-overlay-remodnav)
-    1. [Single REMoDNaV](https://github.com/treyescan/event-classifier?tab=readme-ov-file#4-single-remodnav)
+   1. [Multi REMoDNaV](https://github.com/treyescan/event-classifier?tab=readme-ov-file#1-multi-remodnav)
+   1. [Merge REMoDNaV](https://github.com/treyescan/event-classifier?tab=readme-ov-file#2-merge-remodnav)
+   1. [Overlay REMoDNaV](https://github.com/treyescan/event-classifier?tab=readme-ov-file#3-overlay-remodnav)
+   1. [Single REMoDNaV](https://github.com/treyescan/event-classifier?tab=readme-ov-file#4-single-remodnav)
 1. [Adjusting REMoDNaV parameters](https://github.com/treyescan/event-classifier?tab=readme-ov-file#adjusting-remodnav-parameters)
 1. [Citation](https://github.com/treyescan/event-classifier?tab=readme-ov-file#citation)
 1. [Contribution](https://github.com/treyescan/event-classifier?tab=readme-ov-file#contribution)
@@ -28,7 +26,7 @@ $ cd gaze-classifier
 
 $ pip3 install -m requirements.txt
 
-$ cp __constants.example.py __constants.py 
+$ cp __constants.example.py __constants.py
 # copy example config file; make sure to edit the variables for your system
 ```
 
@@ -45,6 +43,7 @@ The script will search in `input_folder` (set in `__constants.py`) for `gp.csv`.
 > NB: The gaze classifier assumes the same data folder structure as [treyescan/dynamic-aoi-toolkit](https://github.com/treyescan/dynamic-aoi-toolkit). The only difference being that participant ID's are formatted as: CC000. In the code you'll find comments which can be enabled to account for the previous ID format (P-000)
 
 For all found `gp.csv` files:
+
 1. A preperation script will be called (which prepares the data as REMoDNaV requires)
 1. The REMoDNaV adaptation will be called and outputs `events.tsv` along with a visual representation of the events in an image
 1. A report script will be called (which aggregates data and saves visual representation which help loading data into statistical software, e.g. SPSS)
@@ -94,14 +93,14 @@ $ python3 single-remodnav.py CC066 T1 task1 batch_id
 
 As can been seen in the [documentation](https://github.com/psychoinformatics-de/remodnav#example-usage), REMoDNaV accepts input parameters. To adjust these parameters, refer to: [multiremodnav/call_remodnav.py](https://github.com/treyescan/event-classifier/blob/e89d1db30df4a290664ab0cc38a4bf1b5cee8b7b/multiremodnav/call_remodnav.py#L45), line 45.
 
-| REMoDNaV Parameter | TREYESCAN default value |
-| --- | --- |
-| `--min-blink-duration` | 0.075 | 
-| `--dilate-nan` | 0 | 
-| `--savgol-length` | 21/240 | 
-| `--pursuit-velthresh` | 50.0 | 
-| `--noise-factor` | 3.0 | 
-| `--min-pursuit-duration` | 100 | 
+| REMoDNaV Parameter       | TREYESCAN default value |
+| ------------------------ | ----------------------- |
+| `--min-blink-duration`   | 0.075                   |
+| `--dilate-nan`           | 0                       |
+| `--savgol-length`        | 21/240                  |
+| `--pursuit-velthresh`    | 50.0                    |
+| `--noise-factor`         | 3.0                     |
+| `--min-pursuit-duration` | 100                     |
 
 ## Citation
 
