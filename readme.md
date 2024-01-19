@@ -107,7 +107,7 @@ As can been seen in the [documentation](https://github.com/psychoinformatics-de/
 ## Citation
 
 ```
-Joris W. van Rijn, & Faraji, Y. (2024). treyescan/event-classifier: v1.0.0 (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.10535679
+van Rijn, J. W., & Faraji, Y. (2024). treyescan/event-classifier: v1.0.0 (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.10535679
 ```
 
 - DOI V1.0.0: `10.5281/zenodo.10535679`
