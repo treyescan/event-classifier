@@ -1,4 +1,6 @@
-# TREYESCAN – Event Classifier v1.0
+[![DOI](https://zenodo.org/badge/729522631.svg)](https://zenodo.org/doi/10.5281/zenodo.10535678)
+
+# TREYESCAN – Event Classifier v1.0.0
 
 This repo contains the code for event detection from [treyescan/dynamic-aoi-toolkit](https://github.com/treyescan/dynamic-aoi-toolkit). For the classification, a slightly modified version of [psychoinformatics-de/remodnav](https://github.com/psychoinformatics-de/remodnav) is used. Refer to the publication for an explanation of this adaptation. The adapted code can be found in `/remodnav-adapation`.
 
@@ -105,10 +107,10 @@ As can been seen in the [documentation](https://github.com/psychoinformatics-de/
 ## Citation
 
 ```
-(TODO:) https://doi.org/10.5281/zenodo.8029272
+Joris W. van Rijn, & Faraji, Y. (2024). treyescan/event-classifier: v1.0.0 (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.10535679
 ```
 
-- DOI v1.0.0: (TODO:)
+- DOI v1.0.0: 10.5281/zenodo.10535679
 
 ## Contribution
 
